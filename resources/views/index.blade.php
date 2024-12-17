@@ -38,7 +38,7 @@
                 <h5 class="card-title"></h5>
                 <h5 class="card-title"></h5>
                 <h5 class="card-title"></h5>
-                <a href="{{route('eventShow', $events0->id)}}" class="btn btn-danger">Подробнее</a>
+                <a href="{{route('eventShow', $events->id)}}" class="btn btn-danger">Подробнее</a>
             </div>
         </div>
     @endforeach

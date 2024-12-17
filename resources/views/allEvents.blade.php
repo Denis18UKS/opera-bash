@@ -16,9 +16,9 @@
         @endforeach
     </div>
 
-    @if ($news->hasMorePages())
+    @if ($events->hasMorePages())
         <button type="button" class="btn btn-danger">
-            <a href="{{$news->newxPageUrl()}}" class="view-a">Смотреть ещё</a>
+            <a href="{{$events->newxPageUrl()}}" class="view-a">Смотреть ещё</a>
         </button>
     @endif
 </div>

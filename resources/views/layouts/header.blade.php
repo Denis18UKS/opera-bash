@@ -18,7 +18,7 @@
         <div class="nav-a"><a href="" class="navbar-brand"><img src="/images/unnamed 1.png" alt=""></a>
             @guest
                 <a href="{{route('index')}}">Главная</a>
-                <a href="{{route('allEvent')}}">Афиша</a>
+                <a href="{{route('allEvents')}}">Афиша</a>
                 <a href="{{route('allNews')}}">Новости</a>
                 <a href="">О театре</a>
                 <div class="auth">
@@ -34,7 +34,9 @@
             @endauth
         </div>
     </header>
-    @yield('content') // Подключает контент других страниц после навигационной панели
+    
+    <!-- Подключает контент других страниц после навигационной панели -->
+    @yield('content') 
 
 </body>
 

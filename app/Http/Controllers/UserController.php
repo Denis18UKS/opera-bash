@@ -27,7 +27,7 @@ class UserController extends Controller
 
     public function allNews()
     {
-        $event = DB::table('news')->paginate(3);
+        $news = DB::table('news')->paginate(3);
         return view('allNews', compact('news'));
     }
 

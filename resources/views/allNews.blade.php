@@ -1,5 +1,5 @@
 @extends('layouts.header')
-@section('title', 'Все новости')
+@section('title', 'Все мероприятия')
 @section('content')
 <div class="container">
     <h1>Новости</h1>
@@ -17,7 +17,7 @@
 
     @if ($news->hasMorePages())
         <button type="button" class="btn btn-danger">
-            <a href="{{$news->newxPageUrl()}}" class="view-a">Смотреть ещё</a>
+            <a class="view-a" href="{{$news->nextPageUrl()}}">Смотреть еще</a>
         </button>
     @endif
 </div>
